@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segitiga</title>
+    <style>
+        .calculator-container {
+            background-color: rgb(127, 244, 10);
+            color: azure;
+            width: 500px;
+            padding: 30px;
+            margin: auto;
+            border: 3px solid gray;
+        }
+        button{
+            background-color: azure;
+            color: black;
+            border: none;
+            min-height: 50px;
+            min-width: 100px;
+            border-radius: 30px;
+        }
+
+        button:hover{
+            background-color: aqua;
+            cursor: pointer;
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="calculator-container">
+        <h1>Segitiga</h1>
+
+        <p>panjang in sm</p>
+        <input class="height-input-field" type="text">
+
+        <p>lebar in cm</p>
+        <input class="weight-input-field" type="text"><br>
+        <br>
+        <br>
+        <button onclick="myFunction()" class="Calculate">Hasil</button>
+    </div>
+<script>
+    var heightInput = document.querySelector(".height-input-field");
+var weightInput = document.querySelector(".weight-input-field");
+var calculateButton = document.querySelector(".calculate");
+var BMI, height, weight;
+
+function myFunction() {
+    height = heightInput.value;
+    weight = weightInput.value;
+
+    BMI = 0,5,weight*height;
+
+
+
+    alert("bmi anda adalah = "+  BMI);
+}//alas kali tinggi bagi 2
+</script>

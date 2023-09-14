@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persegi</title>
+    <style>
+        .calculator-container{
+            background-color: rgb(146, 248, 14);
+            color: azure;
+            width: 500px;
+            padding: 50px;
+            margin: auto;
+            border: 3px solid gray;
+        }
+        button{
+            background-color: azure;
+            color: black;
+            border: none;
+            min-width: 100px;
+            min-height: 50px;
+            border-radius: 30px;
+        }
+        button-hover{
+            background-color: gray;
+            
+            cursor: pointer;
+            color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="calculator-container">
+        <h1>Panjang persegi</h1>
+        <p>Panjang</p>
+        <input class="Panjang" type="text">
+        <p>Lebar</p>
+        <input class="Lebar" type="text"> <br><br>
+        <button onclick="myFunction()" class="Luas" > Hasil</button>
+    </div>
+    </center>
+    <script >
+        var heighInput = document.querySelector(".Panjang");
+var weightInput = document.querySelector(".Lebar");
+var CalculateButton = document.querySelector(".Luas");
+var BMI,height,weight;
+
+function myFunction(){
+    height = heighInput.value;
+    weight = weightInput.value;
+
+    BMI = weight*height;
+    alert("BMI ideal kamu adalah :" + BMI );
+}
+    </script>
+</body>
+</html>
